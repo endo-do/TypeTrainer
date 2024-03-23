@@ -1,0 +1,21 @@
+{
+  "name": "typetrainer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1",
+    "csv-parser": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1",
+    "vite": "^5.0.0",
+    "javascript": "^5.0.2"
+  }
+}

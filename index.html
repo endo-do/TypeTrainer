@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/main.js"></script>
+    <title>Type Trainer</title>
+</head>
+<body>
+    <div id="statisticDisplay">Acc: 100% | wpm: 00 | words: 0</div>
+    <div id="WordsDisplay"></div>
+
+    <script>
+        
+        document.getElementById("WordsDisplay").innerHTML = "Hello World"
+
+        initializeWordCache();
+        document.getElementById("WordsDisplay").innerHTML = getRandomWordsFromCache(1);
+
+        function updateStatisticDisplay(acc, wpm, words) {
+            document.getElementById('statisticDisplay').innerHTML = `Acc: ${acc}% | wpm: ${wpm} | words: ${words}`;
+        }
+
+        function updateWordsDisplay(words) {
+            document.getElementById('WordsDisplay').innerHTML = words;
+        }
+    </script>
+</body>
+</html>

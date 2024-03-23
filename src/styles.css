@@ -1,0 +1,16 @@
+body {
+  background-color: #000000; 
+  color: #FFFFFF; 
+  display: grid;
+  place-items: center;
+  height: auto; 
+  margin: 0; 
+}
+
+.statisticDisplay {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}

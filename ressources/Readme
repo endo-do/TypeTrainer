@@ -1,0 +1,46 @@
+# Ressources
+
+## 'unigram_freq.csv'
+
+- English Word Frequency:
+- ⅓ Million Most Frequent English Words on the Web
+- 333333 Entries
+
+- https://www.kaggle.com/datasets/rtatman/english-word-frequency?resource=download
+
+## 'all_words.csv'
+
+- Cleaned version of 'unigram_freq.csv'.
+- Only words between a length of 3-8
+- 227757 Entries
+- Avarage Length: 6
+
+## 'words_3.csv'
+
+- all 3 letter words from 'all_words.csv'
+- 12975 Entries
+
+## 'words_4.csv'
+
+- all 4 letter words from 'all_words.csv'
+- 31139 Entries
+
+## 'words_5.csv'
+
+- all 5 letter words from 'all_words.csv'
+- 39932 Entries
+
+## 'words_6.csv'
+
+- all 6 letter words from 'all_words.csv'
+- 49039 Entries
+
+## 'words_7.csv'
+
+- all 7 letter words from 'all_words.csv'
+- 50116 Entries
+
+## 'words_8.csv'
+
+- all 8 letter words from 'all_words.csv'
+- 44550 Entries
