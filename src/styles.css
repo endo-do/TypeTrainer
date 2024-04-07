@@ -13,4 +13,19 @@ body {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  border: 3px solid #FFFFFF;
+  font-size: 20px;
+}
+
+
+.wordsDisplay {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  font-size: 30px;
+  width: 500px;
+  height: 200px
 }

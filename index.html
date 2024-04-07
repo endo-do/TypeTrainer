@@ -7,24 +7,27 @@
     <title>Type Trainer</title>
 </head>
 <body>
-    <div id="statisticDisplay">Acc: 100% | wpm: 00 | words: 0</div>
-    <div id="WordsDisplay"></div>
+    <div id= statisticDisplay class="statisticDisplay">Acc: 100% | wpm: 00 | words: 000</div>
+    <div id= wordsDisplay class="wordsDisplay"></div>
     <script src="src/main.js"></script>
     <script>
-
-        initializeWordCache().then(() => {
-        document.getElementById("WordsDisplay").innerHTML = getRandomWordsFromCache(1);
-    }).catch((error) => {
-        console.error("Error initializing word cache:", error);
-    });;
-
-        function updateStatisticDisplay(acc, wpm, words) {
-            document.getElementById('statisticDisplay').innerHTML = `Acc: ${acc}% | wpm: ${wpm} | words: ${words}`;
+        function getRandomWord(){
+            return fetch("ressources/all_words.csv")
+                .then(response => response.text())
+                .then(text => {
+                    const words = text.split("\n");
+                    const randomIndex = Math.floor(Math.random() * words.length);
+                    const randomWord = words[randomIndex];
+                    return randomWord;
+                })
+                .catch(error => {
+                    console.error('Error fetching CSV:', error);
+                    throw error;
+                });
         }
+        
+        document.getElementById("wordsDisplay").innerText = "hello world";
 
-        function updateWordsDisplay(words) {
-            document.getElementById('WordsDisplay').innerHTML = words;
-        }
     </script>
 </body>
 </html>
